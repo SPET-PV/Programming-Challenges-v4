@@ -12,6 +12,7 @@ Choice = input("What do you want to do :\n(1) - Encrypt\n(2) - Decrypt\n")
 def Encryption():
     #Local Declarations
     PlainText = input("Enter your text :\n")
+    PlainText = PlainText.lower()
     Encoded = []
     Encrypted = []
     Decoded = []
@@ -31,11 +32,12 @@ def Encryption():
     for j in range(0,len(Encrypted)):
         Cypher = ''.join(Decoded)
     #Output
-    print(f"\nYour Cypher is :\n{Cypher}")
+    print(f"\nYour Cypher is :\n{Cypher.upper()}")
 
 def Decryption():
     #Local Declarations
     Cypher = input("Enter your Cypher :\n")
+    Cypher = Cypher.lower()
     Encoded = []
     Encrypted = []
     Decoded = []
